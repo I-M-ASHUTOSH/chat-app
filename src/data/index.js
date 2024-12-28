@@ -7,6 +7,7 @@ import {
   SignOut,
   User,
   Users,
+  Clock,
 } from "phosphor-react";
 
 const Profile_Menu = [
@@ -37,6 +38,10 @@ const Nav_Buttons = [
     index: 2,
     icon: <Phone />,
   },
+  {
+    index: 3,
+    icon: <Clock size={28} />,
+  }
 ];
 
 const Nav_Setting = [
