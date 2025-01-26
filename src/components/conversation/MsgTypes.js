@@ -7,7 +7,7 @@ import { Image, DownloadSimple, DotsThreeVertical } from 'phosphor-react';
 
 import { Message_options } from '../../../src/data/index';
 
-const LinkMsg = ({ el }) => {
+const LinkMsg = ({ el,menu}) => {
   const theme = useTheme();
   return (
     <Stack direction={'row'} justifyContent={el.incoming ? 'start' : 'end'}>
@@ -58,12 +58,12 @@ const LinkMsg = ({ el }) => {
           </Stack>
         </Stack>
       </Box>
-      <MessageOptions />
+      {menu && <MessageOptions />}
     </Stack>
   );
 };
 
-const ReplyMsg = ({ el }) => {
+const ReplyMsg = ({ el,menu }) => {
   const theme = useTheme();
   return (
     <Stack direction={'row'} justifyContent={el.incoming ? 'start' : 'end'}>
@@ -100,7 +100,7 @@ const ReplyMsg = ({ el }) => {
           </Typography>
         </Stack>
       </Box>
-      <MessageOptions />
+      {menu && <MessageOptions />}
     </Stack>
   );
 };
@@ -122,7 +122,7 @@ const Timeline = ({ el }) => {
   );
 };
 
-const TextMsg = ({ el }) => {
+const TextMsg = ({ el,menu }) => {
   const theme = useTheme();
   return (
     <Stack direction={'row'} justifyContent={el.incoming ? 'start' : 'end'}>
@@ -143,7 +143,7 @@ const TextMsg = ({ el }) => {
           {el.message}
         </Typography>
       </Box>
-      <MessageOptions />
+      {menu && <MessageOptions />}
     </Stack>
   );
 };
@@ -201,7 +201,7 @@ const MessageOptions = () => {
   );
 };
 
-const DocMsg = ({ el }) => {
+const DocMsg = ({ el,menu }) => {
   const theme = useTheme();
   return (
     <Stack
@@ -247,13 +247,13 @@ const DocMsg = ({ el }) => {
         </Stack>
         {/* <MessageOptions /> */}
       </Box>
-      <MessageOptions />
+      {menu && <MessageOptions />}
       </Stack>
     </Stack>
   );
 };
 
-const MediaMsg = ({ el }) => {
+const MediaMsg = ({ el,menu }) => {
   const theme = useTheme();
   return (
     <Stack
@@ -287,7 +287,7 @@ const MediaMsg = ({ el }) => {
         </Stack>
         
       </Box>
-      <MessageOptions />
+      {menu && <MessageOptions />}
       </Stack>
       
     </Stack>

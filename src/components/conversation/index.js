@@ -11,7 +11,7 @@ const Conversation = () => {
       <Header/>
       {/* Conversation */}
       <Box width={'100%'} sx={{ height: 'calc(100% - 150px)', overflowY: 'auto' }}>
-      <Message/>
+      <Message menu={true}/>
       </Box>
       {/* Footer */}
       <Footer />
