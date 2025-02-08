@@ -30,7 +30,7 @@ const AuthSocial = () => {
           <TwitterLogo />
         </IconButton>
       </Stack>
-      Auth Social
+      {/* Auth Social */}
     </div>
   );
 };
