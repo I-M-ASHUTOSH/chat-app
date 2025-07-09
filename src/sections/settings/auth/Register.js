@@ -8,6 +8,7 @@ import AuthSocial from './AuthSocial';
 const Register = () => {
   return (
     <Stack spacing={2} sx={{ mb: 5, position: 'relative' }}>
+      
       <Typography varaint='h2'>Get started with Tawwk</Typography>
 
       <Stack direction={'row'} spacing={0.5}>
